@@ -20,6 +20,13 @@ body{
     margin-right: auto;
 }
 
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
 .header-bg{
     /*background-color: #36cecc;*/
     background-color:#01080e;
@@ -30,11 +37,10 @@ body{
     z-index: 1;
 }
 
-.header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 20px;
+/*Classe addicionada atraves do JS*/
+.header-bg.rolagem{
+    background-color: #35e0fd;
+    /*background-color: #2bdefd;*/
 }
 
 .header nav ul,
@@ -49,21 +55,82 @@ body{
 
 .header-menu a{
     position: relative;
+    font-weight: 600;
 }
 
 .header-menu a::after{
     content: "";
     display: block;
-    height: 3px;
+    height: 2px;
     width: 0px;
     background: #176585;
     margin-top: 25px;
     transition: .3s;
     position: absolute;
+    border-radius: 4px;
 }
 
 .header-menu a:hover:after {
     width: 100%;
+}
+
+.conteudo-descricao h1{
+    font-size: 2.5rem;
+}
+
+.conteudo-descricao span{
+    font-size: 1.5rem;
+}
+
+.conteudo-descricao{
+    text-align: start;
+    margin-left: 40px;
+}
+
+.conteudo-descricao p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+    letter-spacing: .2rem;
+}
+
+.conteudo-tecnologias .linkedin{
+    /*background: #0077b7;*/
+    background: #2bdefd;
+    border: 2px solid #2bdefd;
+    transition: 0.5s;
+    color: #093730;
+    font-weight: 600;
+    margin-top: 24px;
+    padding: 10px 60px;
+}
+
+.conteudo-tecnologias .linkedin:hover{
+    background: #d7f9ff;
+    color: #093730;
+    transform: scale(1.1);
+    border: 2px solid #2bdefd;
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.conteudo-tecnologias .github{
+    background: #2bdefd;
+    border: 2px solid #2bdefd;
+    transition: 0.5s;
+    color: #093730;
+    font-weight: 600;
+    margin-top: 24px;
+    padding: 10px 60px;
+}
+
+.conteudo-tecnologias .github:hover{
+    background: #d7f9ff;
+    color: #093730;
+    border: 2px solid #2bdefd;
+    font-weight: 600;
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .skills{
@@ -99,7 +166,8 @@ body{
 .skills-tech:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    border: 1px solid #2bfdbe;
+    /*border: 1px solid #2bfdbe;*/
+    border: 1px solid #35e0fd;
     transition: .5s;
     transform: translateY(-1rem);
 }
@@ -130,8 +198,15 @@ body{
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
 }
 
+.conteudo-card{
+    border: 1px solid #012640;  
+}
+
 .conteudo-card:hover{
-    transform: scale(1.1);
+    /*border: 1px solid #2bfdbe;*/
+    border: 1px solid #35e0fd;
+    transition: 0.3s;
+    transform: translateY(-1rem);
 }
 
 .conteudo-info img{
@@ -163,52 +238,6 @@ body{
 .conteudo-tecnologias a img{
     width: 40px;
     height: 40px;
-}
-
-.conteudo-descricao span{
-    font-size: 1.25rem;
-}
-
-.conteudo-descricao{
-    text-align: start;
-    margin-left: 40px;
-}
-
-.conteudo-descricao p{
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-size: 1rem;
-    letter-spacing: normal;
-}
-
-.conteudo-tecnologias .linkedin{
-    background: #0077b7;
-    border: 3px solid #0077b7;
-    transition: 0.5s;
-}
-
-.conteudo-tecnologias .github{
-    background: #000;
-    border: 3px solid #000;
-    transition: 0.5s;
-}
-
-.conteudo-tecnologias .linkedin:hover{
-    background: #eee;
-    color: #0077b7;
-    border: 3px solid #0077b7;
-    font-weight: 500;
-    transform: scale(1.1);
-    /*transform: scale(0.9);*/
-}
-
-.conteudo-tecnologias .github:hover{
-    background: #eee;
-    color: #000;
-    border: 3px solid #000;
-    font-weight: 600;
-    transform: scale(1.1);
-    /*transform: scale(0.9);*/
 }
 
 .projetos{
@@ -249,9 +278,11 @@ body{
 
 .card-descricao{
     padding: 16px;
-    background: #fff;
+    /*background: #fff;*/
+    background: #021017;
     border: none;
-    color: #141414;
+    /*color: #141414;*/
+    color: #9fbac0;
 }
 
 .tecnologias{
@@ -261,9 +292,9 @@ body{
 }
 
 .logo-tech{
-    width: 40px;
-    height: 50px;
-    background: #f7f7f7;
+    width: 60px;
+    height: 60px;
+    background: #000;
     text-align: center;
     align-content: center;
     border-radius: 4px;
@@ -272,12 +303,7 @@ body{
 
 .html, .css, .js, .react{
     height: 50px;
-    border: 2px solid #f7f7f7;
-}
-
-.bootstrap{
-    width: 60px;
-    border: 2px solid #f7f7f7;
+    border: 2px solid #000;
 }
 
 /*
@@ -326,37 +352,45 @@ body{
 }
 
 .btn-redes{
-    width: 60px;
+    width: 50px;
     padding: 4px 50px;
     border-radius: 5px;
     font: 600;
     text-decoration: none;
     cursor: pointer;
-    color: #fff;
+    color: #093730;
     background-color: #176585;
     margin-right: 10px;
 }
 
 .btn-projeto{
-    background: #176585;
-    border: 1px solid #176585;
+    background: #2bdefd;
+    color: #093730;
+    border: 1px solid #2bdefd;
+    font-weight: 600;
 }
 
 .btn-projeto:hover{
-    background: #fff;
-    color: #176585;
-    border: 1px solid #176585;
+    background: #d7f9ff;
+    color: #093730;
+    border: 1px solid #0077b7;
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .btn-github{
-    background: #000;
-    border: 1px solid #000;
+    background: #2bdefd;
+    border: 1px solid #2bdefd;
+    color: #093730;
+    font-weight: 600;
 }
 
 .btn-github:hover{
-    background: #fff;
-    color: #000;
-    border: 1px solid #000;
+    background: #d7f9ff;
+    color: #093730;
+    border: 1px solid #0077b7;
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 .conteudo-card:hover{
@@ -376,13 +410,15 @@ body{
 }
 
 .contato{
-    background-color: #fff;
+    background-color: #021017;
+    border: 1px solid #012640;
     width: 350px;
     height: 100px;
     margin: auto;
     align-content: center;
 }
 .contato:hover{
+    border: 1px solid #35e0fd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.1);
     transition: 0.3s;
