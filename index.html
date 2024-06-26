@@ -253,25 +253,56 @@
         
         <div class="contatos" id="contato">
             <h2>Contato</h2>
-            <div class="contato-container">
-                <a target="_blank" href="mailto:velton.sb@gmail.com">
-                    <div class="contato">
-                        <img src="./img/gmail.png" alt="">
-                    </div>
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/erivelton-barreto/">
-                    <div class="contato">
-                        <img src="./img/linkedin.png" alt="">
-                    </div>
-                </a>
-                <a target="_blank" href="https://github.com/Eriveltoon">
-                    <div class="contato">
-                        <img src="./img/github.png" alt="">
-                    </div>
-                </a>
+            <div class="container-contato">
+                <div class="contato-container">
+                    <a target="_blank" href="mailto:velton.sb@gmail.com">
+                        <div class="contato">
+                            <img src="./img/gmail.png" alt="">
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/erivelton-barreto/">
+                        <div class="contato">
+                            <img src="./img/linkedin.png" alt="">
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://github.com/Eriveltoon">
+                        <div class="contato">
+                            <img src="./img/github.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="form-contato">
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" maxlength="50" placeholder="Digite seu nome" autocomplete="off" required>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" maxlength="50" placeholder="Digite seu e-mail" autocomplete="off" required>
+
+                        <label for="name">Mensagem</label>
+                        <textarea type="text" name="message" maxlength="500" rows="15" placeholder="Digite sua mensagem" required></textarea>
+
+                        <button type="submit">Enviar</button>
+
+                        <input type="hidden" name="accessKey" value="3daa99d7-fea3-4bfd-84d3-d6d28dbf9282">
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+                    </form>
+                </div>
             </div>
         </div>
     </main>
+    <footer class="footer" id="contato">
+        <div class="footer-container">
+            <p class="footer-texto">
+                Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa. 👋
+            </p>
+            <ul class="footer-contato">
+                <li>velton.sb@gmail.com</li>
+                <li>+55 11 99322-3643</li>
+            </ul>
+            <p class="footer-copy">Erivelton. Alguns direitos reservados.</p>
+        </div>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>
