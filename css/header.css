@@ -1,0 +1,54 @@
+/*HEADER*/
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header-bg{
+    /*background-color: #36cecc;*/
+    background-color:#01080e;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+/*Classe addicionada atraves do JS*/
+.header-bg.rolagem{
+    background-color: #35e0fd;
+    /*background-color: #2bdefd;*/
+}
+
+.header nav ul,
+.header nav ul li,
+.header nav ul li a{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    text-decoration: none;
+    color: #176585;
+}
+
+.header-menu a{
+    position: relative;
+    font-weight: 600;
+}
+
+.header-menu a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background: #176585;
+    margin-top: 25px;
+    transition: .3s;
+    position: absolute;
+    border-radius: 4px;
+}
+
+.header-menu a:hover:after {
+    width: 100%;
+}

@@ -1,0 +1,36 @@
+/*Página de Agradecimento*/
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    background: #01080e;
+    flex-direction: column;
+}
+
+.text{
+    font-size: 45px;
+    color: #9fbac0;
+    margin-bottom: 30px;
+}
+
+.paragrafo{
+    color: #9fbac0;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.btn-home{
+    padding: 15px 55px;
+    background: #35e0fd;
+    text-decoration: none;
+    color: #093730;
+    font-size: 18px;
+    transition: all 0.5s;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.btn-home:hover{
+    border-radius: 20px;
+}
