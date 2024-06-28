@@ -3,12 +3,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    align-items: center;
+    padding: 0 80px;
+    height: 60px;
 }
 
 .header-bg{
-    /*background-color: #36cecc;*/
     background-color:#01080e;
+    /*box-shadow: rgb(53,224,253, 0.5) 0px 2px 15px;*/
+    /*box-shadow: rgb(95,89,199, 0.5) 0px 2px 15px;*/
+    box-shadow: rgb(43,222,253, 0.5) 0px 2px 15px;
     height: 60px;
     position: fixed;
     width: 100%;
@@ -16,10 +20,60 @@
     z-index: 1;
 }
 
-/*Classe addicionada atraves do JS*/
+.header img{
+    width: 60px;
+    height: auto;
+    
+}
+
+/*Troca cor do logo, deixando de acordo com a cor dos links (Roxo)*/
+.colored-logo {
+    filter: brightness(0) saturate(100%) invert(55%) sepia(47%) saturate(6678%) hue-rotate(223deg) brightness(104%) contrast(101%);
+
+    filter: brightness(0) saturate(100%) invert(74%) sepia(74%) saturate(2169%) hue-rotate(155deg) brightness(104%) contrast(102%);
+}
+
+.colored-logo {
+    width: 60px;
+    height: auto;
+    transition: filter 0.3s;
+}
+
+/*Classe addicionada atraves do JS p/ trocar cor da navbar*/
 .header-bg.rolagem{
+    transition: 0.5s;
     background-color: #35e0fd;
-    /*background-color: #2bdefd;*/
+}
+
+/*Classe addicionada atraves do JS p/ trocar cor dos links*/
+.header-bg.rolagem ul li a{
+    transition: 0.5s;
+    color: #176585;
+}
+
+/*Troca cor do logo quando a tela é scrollada, deixando de acordo com a cor dos links*/
+.header-bg.rolagem .colored-logo{
+    filter: brightness(0) saturate(100%) invert(29%) sepia(75%) saturate(653%) hue-rotate(155deg) brightness(93%) contrast(86%);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-menu li {
+    margin-left: 20px;
+}
+
+.header-menu a {
+    text-decoration: none;
 }
 
 .header nav ul,
@@ -29,7 +83,9 @@
     gap: 40px;
     list-style: none;
     text-decoration: none;
-    color: #176585;
+    /*color: #176585;*/
+    color: #2bdefd;
+    /*color: #7b71ff;*/
 }
 
 .header-menu a{
@@ -42,11 +98,18 @@
     display: block;
     height: 2px;
     width: 0px;
-    background: #176585;
+    /*background: #176585;*/
+    /*background: #7b71ff;*/
+    background: #2bdefd;
     margin-top: 25px;
     transition: .3s;
     position: absolute;
     border-radius: 4px;
+}
+
+/*Troca a cor do sublinhado dos links, quando a navbar trocou de cor (Azul)*/
+.header-bg.rolagem .header-menu a::after{
+    background: #176585;
 }
 
 .header-menu a:hover:after {

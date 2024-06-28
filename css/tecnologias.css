@@ -77,3 +77,10 @@
         justify-content: center;
     }
 }
+
+@media(max-width: 500px){
+    .skills-container{
+        grid-template-columns: repeat(2, 150px);
+        justify-content: center;
+    }
+}
