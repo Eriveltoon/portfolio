@@ -125,3 +125,9 @@
         margin-right: auto;
     }
 }
+
+@media(max-width: 660px){
+    .conteudo-info{
+        padding-top: 100px;
+    }
+}
