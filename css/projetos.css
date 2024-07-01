@@ -1,7 +1,9 @@
 /*PROJETOS*/
 .cards{
-    display: flex;
-    flex-wrap: wrap;
+    /*display: flex;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: repeat(3,350px);
     justify-content: center;
     padding: 25px;
     gap: 40px;
@@ -28,6 +30,7 @@
     flex-direction: column;
     border: 1px solid #012640;
     overflow: hidden;
+    border-radius: 4px;
 }
 
 .conteudo-card:hover{
@@ -182,4 +185,16 @@
 
 .conteudo-card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media(max-width: 1200px){
+    .cards{
+        grid-template-columns: repeat(2, 350px);
+    }
+}
+
+@media(max-width: 800px){
+    .cards{
+        grid-template-columns: repeat(1, 350px);
+    }
 }

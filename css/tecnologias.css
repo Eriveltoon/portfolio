@@ -29,6 +29,7 @@
     /*background-color: #fff;*/
     background-color: #021017;
     border: 1px solid #012640;
+    border-radius: 4px;
 }
 
 .skills-tech:hover{

@@ -18,20 +18,22 @@
                     <img src="./img/logo256.png" alt="Logo" class="colored-logo logo">
                 </a>
                 <nav aria-label="navegacao" class="navbar">
-                    <ul class="header-menu">
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                    <div class="menu-mobile">
-                        <img src="./img/menu-hamburguer.png" alt="">
-                        <ul class="header-menu-hamburguer">
+                    <div class="navbar__content">
+                        <ul class="header-menu">
                             <li><a href="#sobre">Sobre</a></li>
                             <li><a href="#skills">Skills</a></li>
                             <li><a href="#projetos">Projetos</a></li>
                             <li><a href="#contato">Contato</a></li>
                         </ul>
+                        <div class="menu-mobile">
+                            <img src="./img/menu-hamburguer.png" alt="" class="menu-hamburguer">
+                            <ul class="header-menu-hamburguer">
+                                <li><a href="#sobre">Sobre</a></li>
+                                <li><a href="#skills">Skills</a></li>
+                                <li><a href="#projetos">Projetos</a></li>
+                                <li><a href="#contato">Contato</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -286,6 +288,7 @@
                 </div>
                 <div class="form-contato">
                     <form action="https://api.staticforms.xyz/submit" method="post">
+                        <h2>Envie um E-mail</h2>
                         <label for="name">Nome</label>
                         <input type="text" name="name" maxlength="50" placeholder="Digite seu nome" autocomplete="off" required>
 
