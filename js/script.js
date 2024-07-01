@@ -24,3 +24,17 @@ menuLinks.forEach(function (link) {
         menuMobile.classList.remove('active');
     });
 });
+
+//Efeito do nome sendo digitado
+function escreverNome(elemento){
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    textoArray.forEach((letra, i) => {
+        setTimeout(() => {
+            elemento.innerHTML += letra;
+        }, 110 * i);
+    })
+}
+
+const titulo =  document.querySelector(".texto");
+escreverNome(titulo);
