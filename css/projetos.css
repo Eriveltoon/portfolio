@@ -90,6 +90,9 @@
     color: #9fbac0;
 }
 
+.card-descricao .span-projeto{
+    font-weight: bold;
+}
 .card-descricao p{
     padding-top: 20px;
 }
