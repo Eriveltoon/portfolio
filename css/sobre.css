@@ -8,6 +8,7 @@ body{
     flex-direction: row;
     align-items: end;
     justify-content: center;
+    padding-top: 120px;
 }
 
 .conteudo-info img{
@@ -17,7 +18,6 @@ body{
 }
 
 .conteudo-descricao{
-    width: 50%;
     padding: 20px;
     display: flex;
     flex-direction: column;

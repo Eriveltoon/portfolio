@@ -11,7 +11,8 @@
 
 .container-contato{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 120px;
     padding-top: 40px;
 }
 
