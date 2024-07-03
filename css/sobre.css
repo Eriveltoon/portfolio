@@ -122,6 +122,19 @@ body{
         height: 450px;
         border-radius: 4px;
     }
+
+    .conteudo-descricao p{
+        max-width: 55ch;
+    }
+}
+
+@media(max-width: 1025px){
+    .conteudo-tecnologias a{
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media(max-width: 1000px){

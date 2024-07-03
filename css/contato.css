@@ -121,6 +121,12 @@ form button:hover{
 }
 
 /*Responsivo Contato*/
+@media(max-width: 1024px){
+    .container-contato{
+        gap: 20px;
+    }
+}
+
 @media(max-width: 1000px){
     .container-contato{
         flex-direction: column;
