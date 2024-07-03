@@ -140,3 +140,10 @@ form button:hover{
         margin-bottom: 100px;
     }
 }
+
+@media(max-width: 320px){
+    .contato-container{
+        gap: 60px;
+        width: 100%;
+    }
+}

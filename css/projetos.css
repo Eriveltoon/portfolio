@@ -201,3 +201,27 @@
         grid-template-columns: repeat(1, 350px);
     }
 }
+
+@media(max-width: 320px){
+    .projetos{
+        margin-left: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .conteudo-card{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 340px;
+        max-height: 800px;
+    }
+
+    .btn-redes{
+        gap: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn{
+        gap: 5px;
+    }
+}
