@@ -15,6 +15,7 @@ body{
     width: 350px;
     height: 450px;
     border-radius: 4px;
+    object-fit: contain;
 }
 
 .conteudo-descricao{
